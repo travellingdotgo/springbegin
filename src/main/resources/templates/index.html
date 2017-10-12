@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:src="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+</head>
+<body>
+
+<div style="text-align: center;margin:0 auto;width: 1000px; ">
+    <h1>demo index</h1>
+    <table width="100%" border="1" cellspacing="1" cellpadding="0">
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>sexy</td>
+        </tr>
+        <tr th:each="person : ${people}">
+            <td th:text="${person.id}">007</td>
+            <td th:text="${person.name}">weber</td>
+            <td th:text="${person.sexy}">男or女</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
