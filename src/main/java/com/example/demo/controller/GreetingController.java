@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.example.demo.domain.Greeting;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;

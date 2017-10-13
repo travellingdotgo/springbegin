@@ -22,6 +22,7 @@ public class PersonController {
     /*
     @RequestMapping("")
     */
+    // http://localhost:8080/personindex
     @RequestMapping("personindex")
     public String index(Model model) {
         List<Person> people = new ArrayList<>();
