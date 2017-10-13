@@ -12,9 +12,11 @@ public class IndexController {
         return "index2";
     }
 
+    /*
     @RequestMapping("/")
     public String hello(){
         return "hello Springboot";
     }
+    */
 
 }
