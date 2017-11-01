@@ -12,10 +12,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+
+
 import java.util.Arrays;
 
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 
+@EnableHystrixDashboard
+@EnableHystrix
 @SpringBootApplication
 @ComponentScan(basePackages = "com.example.demo")
 @EnableJpaRepositories(basePackages = "com.example.demo.repo")
