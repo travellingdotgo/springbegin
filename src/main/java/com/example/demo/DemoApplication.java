@@ -14,6 +14,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+
 
 
 import java.util.Arrays;
@@ -21,7 +23,9 @@ import java.util.Arrays;
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 
 @EnableHystrixDashboard
+@EnableCircuitBreaker
 @EnableHystrix
+
 @SpringBootApplication
 @ComponentScan(basePackages = "com.example.demo")
 @EnableJpaRepositories(basePackages = "com.example.demo.repo")
