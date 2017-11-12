@@ -1,3 +1,6 @@
+mvn clean; mvn package && mvn spring-boot:run
+
+awk 'NR==1{print}' readme.md  | bash
 
 
 remote mysql config for MyBatis:
